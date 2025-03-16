@@ -29,7 +29,7 @@ jobs:
         syft docker.io/library/nginx:latest -o cyclonedx-xml > sbom.xml
 
     - name: Upload SBOM Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: spdx-report
         path: spdx.json 
